@@ -9,7 +9,7 @@ Restaurant App Menu application - CRUD, third party login providers
 
 From the terminal, run:
 
-    git clone https://github.com/udacity/OAuth2.0 oauth
+    git clone https://github.com/sherinkuruvilla/OAuth2.0 oauth
 
 This will give you a directory named **oauth** complete with the source code for the flask application, a vagrantfile, and a bootstrap.sh file for installing all of the necessary tools.
 
@@ -31,3 +31,8 @@ Now type **python database_setup.py** to initialize the database.
 Type **python lotsofmenus.py** to populate the database with restaurants and menu items. (Optional)
 
 Type **python project.py** to run the Flask web server. In your browser visit **http://localhost:5000** to view the restaurant menu app.  You should be able to view, add, edit, and delete menu items and restaurants.
+
+# Navigating the Restaurant Menu Application
+## Fetch the Source Code and VM Configuration
+
+
