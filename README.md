@@ -1,4 +1,4 @@
-# Project 5
+# Udacity FSND Project 5
 Restaurant App Menu application - CRUD, third party login providers
 
 # Navigating the Restaurant Menu Application
