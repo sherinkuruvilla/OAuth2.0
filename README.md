@@ -33,6 +33,24 @@ Type **python lotsofmenus.py** to populate the database with restaurants and men
 Type **python project.py** to run the Flask web server. In your browser visit **http://localhost:5000** to view the restaurant menu app.  You should be able to view, add, edit, and delete menu items and restaurants.
 
 # Navigating the Restaurant Menu Application
-## Fetch the Source Code and VM Configuration
+## Purpose
+The application allows any public user to see a list of restaurants and menu items available in the restaurant menu application. 
+
+## View restaurants and menu items (CRUD: Read)
+Website reads restaurant and menu_item information from a SQLite database named restaurantmenuwithusers.db. This does not require that user be logged in.
+
+## Add, edit, delete new restaurant and menu items (CRUD: Create, Update, Delete)
+Website includes a form allowing users to add new restaurants and menu items - detailing name, description, price, course type and upon succesful saving, the record is tagged with creator's user id. Only logged in users can add records to the database, and only the creator is allowed edit and delete privileges.
+
+## Authentication & Authorization
+Create, delete and update operations requires authorization status prior to execution.  Public users are directed a restaurant listing page and menu items page that allows read, but no CRUD operations.
+
+Page implements a third-party authentication & authorization service using Google Accounts instead of implementing a local authentication & authorization spec.
+
+There is a 'Login' and 'Logout' button/link in the project. 
+
+## API Endpoint
+Navigate to http://localhost:5000/restaurant/JSON  or from http://localhost:5000/restaurant page click on 'Restaurants JSON' menu to view a JSON endpoint that serves the same information as displayed in the HTML endpoints for an arbitrary item in the catalog.
+
 
 
