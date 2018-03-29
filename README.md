@@ -29,7 +29,7 @@ Navigate to http://localhost:5000/restaurant/JSON  or from http://localhost:5000
 
 From the terminal, run:
 
-    git clone https://github.com/sherinkuruvilla/OAuth2.0 oauth
+    git clone https://github.com/sherinkuruvilla/OAuth2.0 itemcatalogapp
 
 This will give you a directory named **oauth** complete with the source code for the flask application, a vagrantfile, and a bootstrap.sh file for installing all of the necessary tools.
 
