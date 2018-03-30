@@ -15,7 +15,7 @@ import requests
 from functools import wraps
 import sys
 sys.path.insert(0,"/var/www/itemcatalogapp")
-sys.path.append("/var/www/itemcatalogapp/")
+sys.path.append("/var/www/itemcatalogapp")
 
 app = Flask(__name__)
 
