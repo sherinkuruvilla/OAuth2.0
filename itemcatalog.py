@@ -13,14 +13,15 @@ import json
 from flask import make_response
 import requests
 from functools import wraps
-import sys
-sys.path.insert(0,"/var/www/itemcatalogapp")
-sys.path.append("/var/www/itemcatalogapp")
+
+import os
+script_dir = os.path.dirname(__file__)
 
 app = Flask(__name__)
 
+json_path = os.path.join(script_dir, 'client_secrets.json')
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open(json_path, 'r').read())['web']['client_id']
 APPLICATION_NAME = "Restaurant Menu Application"
 
 
